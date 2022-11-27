@@ -4,21 +4,38 @@
 export default {
     image: {
         upload: {
-            types: ['gif', 'png', 'jpg', 'jpeg', 'webp']
+            types: ["gif", "png", "jpg", "jpeg", "webp"],
         },
-        toolbar: [
-            'imageBrowser',
-            'imageStyle:full',
-            'imageStyle:alignLeft',
-            'imageStyle:alignCenter',
-            'imageStyle:alignRight',
-            'imageTextAlternative',
+        resizeOptions: [
+            {
+                name: "resizeImage:original",
+                value: null,
+                icon: "original",
+            },
+            {
+                name: "resizeImage:40",
+                value: "40",
+                icon: "small",
+            },
+            {
+                name: "resizeImage:50",
+                value: "50",
+                icon: "medium",
+            },
+            {
+                name: "resizeImage:60",
+                value: "60",
+                icon: "large",
+            },
         ],
-        styles: [
-            'full',
-            'alignLeft',
-            'alignCenter',
-            'alignRight',
-        ]
-    }
-}
+        toolbar: [
+            "imageBrowser",
+            "imageStyle:full",
+            "imageStyle:alignLeft",
+            "imageStyle:alignCenter",
+            "imageStyle:alignRight",
+            "imageTextAlternative",
+        ],
+        styles: ["full", "alignLeft", "alignCenter", "alignRight"],
+    },
+};
