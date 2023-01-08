@@ -72,7 +72,7 @@ export default class CkEditor extends ClassicEditorBase {
             ...require("./config/table").default,
             ...require("./config/toolbar").default,
             ...require("./config/headings").default,
-            //...require("./config/html").default,
+            ...require("./config/html").default,
             ...require("./config/video").default,
         };
     }

@@ -4,8 +4,8 @@ export default {
         sanitizeHtml(rawHtml) {
             return {
                 html: rawHtml,
-                hasChanged: false
-            }
-        }
-    }
-}
+                hasChanged: true,
+            };
+        },
+    },
+};
