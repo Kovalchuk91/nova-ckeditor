@@ -4,7 +4,7 @@ export default {
         sanitizeHtml(rawHtml) {
             return {
                 html: rawHtml,
-                hasChanged: true,
+                hasChanged: false,
             };
         },
     },

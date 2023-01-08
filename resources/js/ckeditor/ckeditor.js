@@ -65,6 +65,7 @@ export default class CkEditor extends ClassicEditorBase {
     // Merge Configurations
     static get defaultConfig() {
         return {
+            allowedContent: true,
             licenseKey: "",
             ...require("./config/link").default,
             ...require("./config/image").default,
