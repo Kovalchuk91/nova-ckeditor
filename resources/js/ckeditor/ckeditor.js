@@ -58,6 +58,7 @@ import Video from "./plugins/video/video";
 
 // Other
 import SourceEditing from "@ckeditor/ckeditor5-source-editing/src/sourceediting";
+import GeneralHtmlSupport from "@ckeditor/ckeditor5-html-support/src/generalhtmlsupport";
 import ElementAddAttributes from "./plugins/element-attribute/src/add-attribute-to-element";
 
 // Extend the Base Class
@@ -65,7 +66,6 @@ export default class CkEditor extends ClassicEditorBase {
     // Merge Configurations
     static get defaultConfig() {
         return {
-            allowedContent: true,
             licenseKey: "",
             ...require("./config/link").default,
             ...require("./config/image").default,
@@ -75,6 +75,7 @@ export default class CkEditor extends ClassicEditorBase {
             ...require("./config/headings").default,
             ...require("./config/html").default,
             ...require("./config/video").default,
+            ...require("./config/htmlSupport").default,
         };
     }
 
@@ -120,6 +121,7 @@ export default class CkEditor extends ClassicEditorBase {
             Indent,
             IndentBlock,
             ElementAddAttributes,
+            GeneralHtmlSupport,
         ];
     }
 }
